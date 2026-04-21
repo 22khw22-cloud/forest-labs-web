@@ -29,7 +29,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-        serif: ['Noto Serif KR', 'Georgia', 'serif'],
+        serif: ['var(--font-noto-serif-kr)', 'Georgia', 'serif'],
       },
     },
   },

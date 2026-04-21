@@ -1,4 +1,12 @@
+import { Noto_Serif_KR } from 'next/font/google'
 import './globals.css'
+
+const notoSerifKR = Noto_Serif_KR({
+  subsets: ['latin'],
+  weight: ['400', '600'],
+  variable: '--font-noto-serif-kr',
+  display: 'swap',
+})
 
 export const metadata = {
   title: '생각의 숲 — 청소년이 정말 책을 내는 프로그램',
@@ -12,7 +20,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ko">
+    <html lang="ko" className={notoSerifKR.variable}>
       <body>{children}</body>
     </html>
   )
